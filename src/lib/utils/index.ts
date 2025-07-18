@@ -1,3 +1,3 @@
-export * from "./arbitrage";
-export * from "./betting";
-export * from "./math";
+export * from './arbitrage'
+export * from './betting'
+export * from './math'
