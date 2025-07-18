@@ -10,13 +10,15 @@ import { Table, TableBody, TableHead, TableHeader, TableRow } from './Table'
 import { CounterBetRow } from './CounterBet'
 import type { ArbitrageResult } from '@/interfaces/betting.types'
 import { useEffect } from 'react'
+import type { Currency } from '@/lib/utils/currency'
 
 export const CounterBetsInput: React.FC<{
   matches: Match[]
   counterOdds: number[]
   onCounterOddsChange: (odds: number[]) => void
   result: ArbitrageResult | null
-}> = ({ matches, counterOdds, onCounterOddsChange, result }) => {
+  currency: Currency
+}> = ({ matches, counterOdds, onCounterOddsChange, result, currency }) => {
   const updateCounterOdd = (index: number, value: number) => {
     const newOdds = [...counterOdds]
     newOdds[index] = value
@@ -56,6 +58,7 @@ export const CounterBetsInput: React.FC<{
                 counterOdd={counterOdds[index]}
                 calculatedStake={result?.counterBets[index]?.stake}
                 onOddChange={(value) => updateCounterOdd(index, value)}
+                currency={currency}
               />
             ))}
           </TableBody>

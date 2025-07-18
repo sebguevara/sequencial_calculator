@@ -159,6 +159,7 @@ const SequentialCalculator: React.FC = () => {
               setResult(null)
             }}
             result={result}
+            currency={currency}
           />
         </div>
 
