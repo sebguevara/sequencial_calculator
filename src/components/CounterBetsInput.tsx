@@ -24,7 +24,7 @@ export const CounterBetsInput: React.FC<{
       }, [counterOdds, matches, onCounterOddsChange]);
   
     return (
-      <Card>
+      <Card className="min-w-0 flex-shrink-0">
         <CardHeader>
           <CardTitle>Bookmaker #2</CardTitle>
           <CardDescription>Configure las cuotas contrarias para cada partido</CardDescription>

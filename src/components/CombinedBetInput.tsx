@@ -35,7 +35,7 @@ export const CombinedBetInput: React.FC<{
     };
   
     return (
-      <Card>
+      <Card className="min-w-0 flex-shrink-0">
         <CardHeader>
           <CardTitle>Bookmaker #1 (Combinada)</CardTitle>
           <CardDescription>Configure su apuesta combinada</CardDescription>

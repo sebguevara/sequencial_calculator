@@ -21,7 +21,7 @@ export const StakeInput: React.FC<{
       <div>
         <Label>Cuota combinada</Label>
         <Input
-          value={combinedOdds.toFixed(4)}
+          value={combinedOdds.toFixed(3)}
           readOnly
           className="mt-1 bg-gray-50"
         />

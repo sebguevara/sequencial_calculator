@@ -4,13 +4,13 @@ export const SummaryStats: React.FC<{
     totalInvestment: number;
     guaranteedProfit: number;
   }> = ({ totalInvestment, guaranteedProfit }) => (
-    <div className="grid grid-cols-2 gap-4">
-      <div>
+    <div className="flex gap-4 justify-between">
+      <div className="flex flex-col items-center">
         <Label>Inversión total</Label>
         <p className="text-2xl font-bold">€{totalInvestment.toFixed(2)}</p>
       </div>
-      <div>
-        <Label>Beneficio garantizado</Label>
+      <div className="flex flex-col items-center">
+        <Label>Beneficio</Label>
         <p className={`text-2xl font-bold ${guaranteedProfit > 0 ? 'text-green-600' : 'text-red-600'}`}>
           €{guaranteedProfit.toFixed(2)}
         </p>
