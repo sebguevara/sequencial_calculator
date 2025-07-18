@@ -59,10 +59,10 @@ const SequentialCalculator: React.FC = () => {
   const canClear     = combinedStake > 0 || matches.length || counterOdds.length;
 
   return (
-    <div className="container mx-auto p-4 max-w-6xl">
+    <div className="container sm:mobile md:desktop mx-auto p-4 max-w-6xl">
       <div className="flex flex-col md:flex-row justify-between items-center mb-6">
         <h1 className="text-3xl font-bold mb-4">CALCULADORA SECUENCIAL</h1>
-        <div className="flex gap-2 flex-1 justify-end md:w-auto w-full md:mb-0 mb-4">
+        <div className="flex gap-2 sm:mobile-between md:desktop-between md:w-auto w-full md:mb-0 mb-4">
           <Button variant="outline" onClick={() => {
             setMatches([]);
             setCombinedStake(0);

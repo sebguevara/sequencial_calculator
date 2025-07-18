@@ -118,3 +118,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.mobile {
+  @apply flex flex-col items-center justify-center;
+}
+
+.mobile-between {
+  @apply flex flex-col items-center justify-between gap-2;
+}
+
+.desktop {
+  @apply flex flex-row items-center justify-between;
+}
+
+.desktop-between {
+  @apply flex flex-row items-center justify-between gap-2;
+}
