@@ -59,10 +59,10 @@ const SequentialCalculator: React.FC = () => {
   const canClear     = combinedStake > 0 || matches.length || counterOdds.length;
 
   return (
-    <div className="container sm:mobile md:desktop mx-auto p-4 max-w-6xl">
-      <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold mb-4">CALCULADORA SECUENCIAL</h1>
-        <div className="flex gap-2 sm:mobile-between md:desktop-between md:w-auto w-full md:mb-0 mb-4">
+    <div className="flex flex-col items-center justify-center px-4 md:px-0 my-4">
+      <div className="flex lg:px-4 flex-col lg:flex-row w-full justify-center items-center mb-6">
+        <h1 className="md:text-3xl md:text-start w-full text-center text-xl font-bold">CALCULADORA SECUENCIAL</h1>
+        <div className="flex gap-2 w-full justify-end mt-4 md:mt-0">
           <Button variant="outline" onClick={() => {
             setMatches([]);
             setCombinedStake(0);
@@ -78,7 +78,7 @@ const SequentialCalculator: React.FC = () => {
       </div>
 
       <div className="space-y-6">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           <CombinedBetInput
             stake={combinedStake}
             onStakeChange={setCombinedStake}
